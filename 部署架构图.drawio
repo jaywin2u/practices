@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-03-12T02:23:14.373Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" etag="i87FVhaQzMawA_rZ-fxW" version="24.0.5" type="github">
+<mxfile host="app.diagrams.net" modified="2024-03-12T02:24:02.492Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" etag="3pyVtxj8yRoC2fhnjzJd" version="24.0.5" type="github">
   <diagram name="第 1 页" id="UEVJXnBHdPSzS9DN39Q3">
     <mxGraphModel dx="1004" dy="585" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="1654" math="0" shadow="0">
       <root>
@@ -115,13 +115,13 @@
         <mxCell id="U64g5x8YHhDghbwO3PD0-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Helvetica;fontSize=12;fontColor=default;" edge="1" parent="1" source="U64g5x8YHhDghbwO3PD0-24" target="U64g5x8YHhDghbwO3PD0-22">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="U64g5x8YHhDghbwO3PD0-24" value="processSampler" style="html=1;dashed=0;whiteSpace=wrap;rounded=0;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fontColor=default;fillColor=default;" vertex="1" parent="1">
+        <mxCell id="U64g5x8YHhDghbwO3PD0-24" value="processSampler&lt;br&gt;(cmdbData)" style="html=1;dashed=0;whiteSpace=wrap;rounded=0;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fontColor=default;fillColor=default;" vertex="1" parent="1">
           <mxGeometry x="445" y="630" width="95" height="50" as="geometry" />
         </mxCell>
         <mxCell id="U64g5x8YHhDghbwO3PD0-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Helvetica;fontSize=12;fontColor=default;" edge="1" parent="1" source="U64g5x8YHhDghbwO3PD0-25" target="U64g5x8YHhDghbwO3PD0-22">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="U64g5x8YHhDghbwO3PD0-25" value="metricSampler" style="html=1;dashed=0;whiteSpace=wrap;rounded=0;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fontColor=default;fillColor=default;" vertex="1" parent="1">
+        <mxCell id="U64g5x8YHhDghbwO3PD0-25" value="metricSampler&lt;br&gt;(metricData)" style="html=1;dashed=0;whiteSpace=wrap;rounded=0;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fontColor=default;fillColor=default;" vertex="1" parent="1">
           <mxGeometry x="610" y="630" width="97.5" height="50" as="geometry" />
         </mxCell>
         <mxCell id="U64g5x8YHhDghbwO3PD0-32" value="Text" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Helvetica;fontSize=12;fontColor=default;" vertex="1" parent="1">
