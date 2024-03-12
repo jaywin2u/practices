@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-03-12T03:39:02.224Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" etag="Ba_KmfXKabUwcIn_iRlP" version="24.0.5" type="github">
+<mxfile host="app.diagrams.net" modified="2024-03-12T03:45:34.105Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" etag="z9u0XXHlkDerhounLyHu" version="24.0.5" type="github">
   <diagram name="第 1 页" id="2tMNXyeNniKinCIlr4IS">
     <mxGraphModel dx="867" dy="505" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="1654" math="0" shadow="0">
       <root>
@@ -35,6 +35,30 @@
         </mxCell>
         <mxCell id="zGtEDN8OLJXr4s6591F3-11" value="合规性检查" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="750" y="360" width="70" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="zGtEDN8OLJXr4s6591F3-12" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="110" y="140" width="220" height="210" as="geometry" />
+        </mxCell>
+        <mxCell id="zGtEDN8OLJXr4s6591F3-13" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="350" y="140" width="270" height="210" as="geometry" />
+        </mxCell>
+        <mxCell id="zGtEDN8OLJXr4s6591F3-14" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="640" y="140" width="180" height="210" as="geometry" />
+        </mxCell>
+        <mxCell id="zGtEDN8OLJXr4s6591F3-15" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="360" y="190" width="140" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="zGtEDN8OLJXr4s6591F3-16" value="Text" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="490" y="350" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="zGtEDN8OLJXr4s6591F3-17" value="全生命周期管理" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="380" y="190" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="zGtEDN8OLJXr4s6591F3-18" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="370" y="220" width="60" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="zGtEDN8OLJXr4s6591F3-19" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="435" y="220" width="60" height="20" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
