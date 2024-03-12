@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-03-12T03:06:36.076Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" etag="JCyE0mkASN2sw2JEOY8e" version="24.0.5" type="github">
+<mxfile host="app.diagrams.net" modified="2024-03-12T03:06:46.563Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" etag="Vo41a4FlsYi3ZkGmLpb7" version="24.0.5" type="github">
   <diagram name="第 1 页" id="UEVJXnBHdPSzS9DN39Q3">
     <mxGraphModel dx="1272" dy="741" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="1654" math="0" shadow="0">
       <root>
@@ -263,9 +263,6 @@
         </mxCell>
         <mxCell id="U64g5x8YHhDghbwO3PD0-96" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;&lt;b&gt;微服务集群&lt;/b&gt;&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontFamily=Helvetica;fontSize=12;fontColor=default;" vertex="1" parent="1">
           <mxGeometry x="355" y="95" width="110" height="40" as="geometry" />
-        </mxCell>
-        <mxCell id="U64g5x8YHhDghbwO3PD0-97" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;&lt;b&gt;鉴权&lt;/b&gt;&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontFamily=Helvetica;fontSize=12;fontColor=default;" vertex="1" parent="1">
-          <mxGeometry x="301" y="115" width="60" height="40" as="geometry" />
         </mxCell>
         <mxCell id="U64g5x8YHhDghbwO3PD0-100" value="" style="rounded=1;whiteSpace=wrap;html=1;dashed=1;verticalLabelPosition=bottom;sketch=0;fillColor=#A153A0;strokeColor=#ffffff;verticalAlign=top;points=[[0,0.5,0],[0.125,0.25,0],[0.25,0,0],[0.5,0,0],[0.75,0,0],[0.875,0.25,0],[1,0.5,0],[0.875,0.75,0],[0.75,1,0],[0.5,1,0],[0.125,0.75,0]];pointerEvents=1;shape=mxgraph.cisco_safe.compositeIcon;bgIcon=mxgraph.cisco_safe.design.blank_device;resIcon=mxgraph.cisco_safe.design.access_switch_2;" vertex="1" parent="1">
           <mxGeometry x="182.5" y="284" width="68.5" height="40" as="geometry" />
