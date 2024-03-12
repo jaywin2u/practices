@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-03-12T03:13:08.293Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" etag="-i9oKHydIDOaukk74AgI" version="24.0.5" type="github">
+<mxfile host="app.diagrams.net" modified="2024-03-12T03:15:28.980Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" etag="x6wlRAwePrGPhyLw-Msq" version="24.0.5" type="github">
   <diagram name="第 1 页" id="UEVJXnBHdPSzS9DN39Q3">
     <mxGraphModel dx="1735" dy="1011" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="1654" math="0" shadow="0">
       <root>
@@ -269,9 +269,6 @@
         </mxCell>
         <mxCell id="U64g5x8YHhDghbwO3PD0-99" value="" style="image;html=1;image=img/lib/clip_art/computers/Server_128x128.png;rounded=0;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fontColor=default;fillColor=default;" vertex="1" parent="1">
           <mxGeometry x="120" y="290" width="80" height="37.8" as="geometry" />
-        </mxCell>
-        <mxCell id="U64g5x8YHhDghbwO3PD0-101" value="Gateway网关鉴权" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontFamily=Helvetica;fontSize=12;fontColor=default;" vertex="1" parent="1">
-          <mxGeometry x="403" y="380" width="120" height="30" as="geometry" />
         </mxCell>
         <mxCell id="U64g5x8YHhDghbwO3PD0-102" value="" style="image;html=1;image=img/lib/clip_art/computers/Server_128x128.png;rounded=0;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fontColor=default;fillColor=default;" vertex="1" parent="1">
           <mxGeometry x="272" y="310" width="80" height="37.8" as="geometry" />
