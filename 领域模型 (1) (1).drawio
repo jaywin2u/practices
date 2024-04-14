@@ -1,0 +1,289 @@
+<mxfile host="app.diagrams.net" modified="2024-04-14T07:32:31.651Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36" etag="_Mq2uHeX7w7bHBbxVLes" version="24.2.3" type="github">
+  <diagram name="第 1 页" id="A6H5ExyCg3AIkG1d_fSl">
+    <mxGraphModel dx="2306" dy="2184" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="1654" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="cfgEqrc7yUKkda0pwVI9-48" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="cfgEqrc7yUKkda0pwVI9-2" target="cfgEqrc7yUKkda0pwVI9-46" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="cfgEqrc7yUKkda0pwVI9-49" value="n:n" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="cfgEqrc7yUKkda0pwVI9-48" vertex="1" connectable="0">
+          <mxGeometry x="-0.1543" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="cfgEqrc7yUKkda0pwVI9-2" value="&lt;table border=&quot;1&quot; width=&quot;100%&quot; height=&quot;100%&quot; cellpadding=&quot;4&quot; style=&quot;width:100%;height:100%;border-collapse:collapse;&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;th align=&quot;center&quot;&gt;有效告警&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;- id：String&lt;br&gt;- 描述信息：String&lt;br&gt;- 严重级别：String&lt;br&gt;- 发生时间：dateTime&lt;br&gt;- 状态：String&lt;br&gt;- 自愈规则：Relation&lt;br&gt;- 处理人：String&lt;br&gt;&lt;br&gt;- 是否符合自愈规则：Bool&lt;br&gt;- 关联自愈规则：Relation&lt;br&gt;- 关联的收敛规则：Relation&lt;br&gt;- 处理人：Relation&lt;br&gt;- 关联资源：Relation&lt;br&gt;- 关联告警源：Relation&lt;br&gt;- 告警轨迹：Relation&lt;br&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;- 告警分派&lt;br&gt;- 告警认领&lt;br&gt;- 告警挂起&lt;br&gt;- 告警升级&lt;br&gt;- 告警恢复&lt;br&gt;- 告警关闭&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;overflow=fill;" parent="1" vertex="1">
+          <mxGeometry x="330" y="130" width="160" height="340" as="geometry" />
+        </mxCell>
+        <mxCell id="cfgEqrc7yUKkda0pwVI9-3" value="&lt;table border=&quot;1&quot; width=&quot;100%&quot; height=&quot;100%&quot; cellpadding=&quot;4&quot; style=&quot;width:100%;height:100%;border-collapse:collapse;&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;th align=&quot;center&quot;&gt;告警分派规则&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;- id：String&lt;br&gt;- 描述信息：String&lt;br&gt;- 规则条件：struct&lt;br&gt;- 匹配条件：struct&lt;br&gt;- 是否启用：Bool&lt;br&gt;- 关联告警：Relation&lt;br&gt;- 分派用户：Relation&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;- 创建分派规则&lt;br&gt;- 编辑分派规则&lt;br&gt;- 启用/禁用分派规则&lt;br&gt;- 删除分派规则&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;overflow=fill;" parent="1" vertex="1">
+          <mxGeometry x="580" y="60" width="160" height="290" as="geometry" />
+        </mxCell>
+        <mxCell id="cfgEqrc7yUKkda0pwVI9-18" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="cfgEqrc7yUKkda0pwVI9-7" target="cfgEqrc7yUKkda0pwVI9-17" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="cfgEqrc7yUKkda0pwVI9-19" value="n:1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="cfgEqrc7yUKkda0pwVI9-18" vertex="1" connectable="0">
+          <mxGeometry x="-0.3968" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="cfgEqrc7yUKkda0pwVI9-7" value="&lt;table border=&quot;1&quot; width=&quot;100%&quot; height=&quot;100%&quot; cellpadding=&quot;4&quot; style=&quot;width:100%;height:100%;border-collapse:collapse;&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;th align=&quot;center&quot;&gt;用户&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;- id：String&lt;br&gt;- 用户名：String&lt;br&gt;- 角色：Relation&lt;br&gt;- 是否处于值班状态：Bool&lt;br&gt;- 值班日历信息：Relation&lt;br&gt;- 所属小组：Relation&lt;br&gt;- 管理资源：Relation&lt;br&gt;- 联系方式：String&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;- 查看用户&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;overflow=fill;" parent="1" vertex="1">
+          <mxGeometry x="790" y="60" width="160" height="210" as="geometry" />
+        </mxCell>
+        <mxCell id="cfgEqrc7yUKkda0pwVI9-8" value="" style="edgeStyle=elbowEdgeStyle;elbow=horizontal;endArrow=classic;html=1;curved=0;rounded=0;endSize=8;startSize=8;" parent="1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="740" y="220" as="sourcePoint" />
+            <mxPoint x="790" y="170" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="cfgEqrc7yUKkda0pwVI9-9" value="n:n" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="cfgEqrc7yUKkda0pwVI9-8" vertex="1" connectable="0">
+          <mxGeometry x="-0.64" y="2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="cfgEqrc7yUKkda0pwVI9-11" value="" style="edgeStyle=elbowEdgeStyle;elbow=horizontal;endArrow=classic;html=1;curved=0;rounded=0;endSize=8;startSize=8;" parent="1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="950" y="150" as="sourcePoint" />
+            <mxPoint x="1000" y="100" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="cfgEqrc7yUKkda0pwVI9-12" value="n:n" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="cfgEqrc7yUKkda0pwVI9-11" vertex="1" connectable="0">
+          <mxGeometry x="-0.64" y="2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="cfgEqrc7yUKkda0pwVI9-13" value="&lt;table border=&quot;1&quot; width=&quot;100%&quot; height=&quot;100%&quot; cellpadding=&quot;4&quot; style=&quot;width:100%;height:100%;border-collapse:collapse;&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;th align=&quot;center&quot;&gt;值班日历&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;- id：String&lt;br&gt;- 日期：String&lt;br&gt;- 值班人员：Relation&lt;br&gt;- 值班计划：Struct&lt;br&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;- 新增值班计划&lt;br&gt;- 修改值班计划&lt;br&gt;- 删除指标计划&lt;br&gt;- 查看值班计划&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;overflow=fill;" parent="1" vertex="1">
+          <mxGeometry x="790" y="-180" width="160" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="cfgEqrc7yUKkda0pwVI9-17" value="&lt;table border=&quot;1&quot; width=&quot;100%&quot; height=&quot;100%&quot; cellpadding=&quot;4&quot; style=&quot;width:100%;height:100%;border-collapse:collapse;&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;th align=&quot;center&quot;&gt;用户组&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;- id：String&lt;br&gt;- 名称：String&lt;br&gt;- 关联用户：Relation&lt;br&gt;- 关联部门：Relation&lt;br&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;- 查看用户组&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;overflow=fill;" parent="1" vertex="1">
+          <mxGeometry x="790" y="330" width="160" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="cfgEqrc7yUKkda0pwVI9-20" value="&lt;table border=&quot;1&quot; width=&quot;100%&quot; height=&quot;100%&quot; cellpadding=&quot;4&quot; style=&quot;width:100%;height:100%;border-collapse:collapse;&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;th align=&quot;center&quot;&gt;告警源&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;- id：String&lt;br&gt;- 名称：String&lt;br&gt;- IP：IP&lt;br&gt;- Port：Port&lt;br&gt;- 关联部门：Relation&lt;br&gt;- 关联监控服务：Relation&lt;br&gt;- 工具类型：String&lt;br&gt;- 接入策略：Relation&lt;br&gt;- 监控服务：Relation&lt;br&gt;- 有效告警列表：Relation&lt;br&gt;- 原始告警列表：Relation&lt;br&gt;- 是否启用：Bool&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;- 新增告警源&lt;br&gt;- 编辑告警源&lt;br&gt;- 查看告警源&lt;br&gt;- 删除告警源&lt;br&gt;- 启用/禁用告警源&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;overflow=fill;" parent="1" vertex="1">
+          <mxGeometry x="580" y="430" width="160" height="295" as="geometry" />
+        </mxCell>
+        <mxCell id="cfgEqrc7yUKkda0pwVI9-21" value="" style="edgeStyle=elbowEdgeStyle;elbow=horizontal;endArrow=classic;html=1;curved=0;rounded=0;endSize=8;startSize=8;exitX=1.028;exitY=0.456;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="cfgEqrc7yUKkda0pwVI9-20" target="cfgEqrc7yUKkda0pwVI9-26" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="950" y="600" as="sourcePoint" />
+            <mxPoint x="1000" y="550" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="cfgEqrc7yUKkda0pwVI9-22" value="n:1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="cfgEqrc7yUKkda0pwVI9-21" vertex="1" connectable="0">
+          <mxGeometry x="-0.7419" y="2" relative="1" as="geometry">
+            <mxPoint x="39" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="cfgEqrc7yUKkda0pwVI9-23" value="" style="edgeStyle=elbowEdgeStyle;elbow=horizontal;endArrow=classic;html=1;curved=0;rounded=0;endSize=8;startSize=8;exitX=1.012;exitY=0.565;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="cfgEqrc7yUKkda0pwVI9-2" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="530" y="500" as="sourcePoint" />
+            <mxPoint x="580" y="450" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="cfgEqrc7yUKkda0pwVI9-24" value="n:1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="cfgEqrc7yUKkda0pwVI9-23" vertex="1" connectable="0">
+          <mxGeometry x="-0.8204" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="cfgEqrc7yUKkda0pwVI9-25" value="&lt;table border=&quot;1&quot; width=&quot;100%&quot; height=&quot;100%&quot; cellpadding=&quot;4&quot; style=&quot;width:100%;height:100%;border-collapse:collapse;&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;th align=&quot;center&quot;&gt;原始告警&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;- id：String&lt;br&gt;- 描述信息：String&lt;br&gt;- 严重级别：String&lt;br&gt;- 首次发生时间：first_dateTime&lt;br&gt;- 最近发生时间：last_dateTime&lt;br&gt;- 持续时长：time&lt;br&gt;- 发生次数：int&lt;br&gt;- 状态：String&lt;br&gt;- 关联告警源：Relation&lt;br&gt;- 关联资源：Relation&lt;br&gt;- 关联的告警收敛规则：Relation&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;- 对象识别&lt;br&gt;- 告警汇聚&lt;br&gt;- 告警收敛&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;overflow=fill;" parent="1" vertex="1">
+          <mxGeometry x="320" y="500" width="190" height="290" as="geometry" />
+        </mxCell>
+        <mxCell id="cfgEqrc7yUKkda0pwVI9-26" value="&lt;table border=&quot;1&quot; width=&quot;100%&quot; height=&quot;100%&quot; cellpadding=&quot;4&quot; style=&quot;width:100%;height:100%;border-collapse:collapse;&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;th align=&quot;center&quot;&gt;部门&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;- id：String&lt;br&gt;- 名称：String&lt;br&gt;- 关联告警源：Relation&lt;br&gt;- 对象识别规则：Relation&lt;br&gt;- 告警收敛规则：Relation&lt;br&gt;- 告警自愈规则：Relation&lt;br&gt;&lt;br&gt;&lt;br&gt;- 关联小组：Relation&lt;br&gt;- 告警丰富策略：Relation&lt;br&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;- 查看部门&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;overflow=fill;" parent="1" vertex="1">
+          <mxGeometry x="1000" y="470" width="160" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="cfgEqrc7yUKkda0pwVI9-27" value="" style="edgeStyle=elbowEdgeStyle;elbow=horizontal;endArrow=classic;html=1;curved=0;rounded=0;endSize=8;startSize=8;entryX=-0.034;entryY=0.368;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" target="cfgEqrc7yUKkda0pwVI9-26" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="950" y="440" as="sourcePoint" />
+            <mxPoint x="990" y="530" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="cfgEqrc7yUKkda0pwVI9-28" value="n:1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="cfgEqrc7yUKkda0pwVI9-27" vertex="1" connectable="0">
+          <mxGeometry x="-0.4239" relative="1" as="geometry">
+            <mxPoint y="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="cfgEqrc7yUKkda0pwVI9-29" value="" style="edgeStyle=elbowEdgeStyle;elbow=horizontal;endArrow=classic;html=1;curved=0;rounded=0;endSize=8;startSize=8;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" parent="1" target="cfgEqrc7yUKkda0pwVI9-20" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="510" y="630" as="sourcePoint" />
+            <mxPoint x="560" y="580" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="cfgEqrc7yUKkda0pwVI9-30" value="n:1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="cfgEqrc7yUKkda0pwVI9-29" vertex="1" connectable="0">
+          <mxGeometry x="-0.1364" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="cfgEqrc7yUKkda0pwVI9-46" value="&lt;table border=&quot;1&quot; width=&quot;100%&quot; height=&quot;100%&quot; cellpadding=&quot;4&quot; style=&quot;width:100%;height:100%;border-collapse:collapse;&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;th align=&quot;center&quot;&gt;资源对象&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;- id：String&lt;br&gt;- 类型：String&lt;br&gt;- 关联告警：Relation&lt;br&gt;- 负责人：Relation&lt;br&gt;- 关联的原始告警：Relation&lt;br&gt;- 关联维护计划：Relation&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;- 查看资源对象&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;overflow=fill;" parent="1" vertex="1">
+          <mxGeometry x="330" y="-90" width="160" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="cfgEqrc7yUKkda0pwVI9-50" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=-0.008;entryY=0.323;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="cfgEqrc7yUKkda0pwVI9-46" target="cfgEqrc7yUKkda0pwVI9-7" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="760" y="-5" />
+              <mxPoint x="760" y="128" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="cfgEqrc7yUKkda0pwVI9-51" value="n:n" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="cfgEqrc7yUKkda0pwVI9-50" vertex="1" connectable="0">
+          <mxGeometry x="-0.5427" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jqiMgYjZJbjyt3AKPzdf-1" value="&lt;table border=&quot;1&quot; width=&quot;100%&quot; height=&quot;100%&quot; cellpadding=&quot;4&quot; style=&quot;width:100%;height:100%;border-collapse:collapse;&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;th align=&quot;center&quot;&gt;告警轨迹&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;- id：String&lt;br&gt;- 关联告警：Relation&lt;br&gt;- 当前状态：String&lt;br&gt;- 告警开始时间：dateTtime&lt;br&gt;- 告警等级：String&lt;br&gt;- 当前处理人：Relation(用户)&lt;br&gt;- 批次ID：String&lt;br&gt;- 最近处理时间：dateTime&lt;br&gt;- 关注人：Relation(用户)&lt;br&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;- 查看告警轨迹&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;overflow=fill;" parent="1" vertex="1">
+          <mxGeometry x="-100" width="170" height="240" as="geometry" />
+        </mxCell>
+        <mxCell id="u11UjmIOdCRiVaNOssiP-1" value="&lt;table border=&quot;1&quot; width=&quot;100%&quot; height=&quot;100%&quot; cellpadding=&quot;4&quot; style=&quot;width:100%;height:100%;border-collapse:collapse;&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;th align=&quot;center&quot;&gt;对象识别规则&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;- id：String&lt;br&gt;- 名称：String&lt;br&gt;- 描述信息：String&lt;br&gt;- 关联模型：String&lt;br&gt;- 匹配条件：Struct&lt;br&gt;- 关联部门：Relation&lt;br&gt;- 优先级：Int&lt;br&gt;- 原始告警列表：Relation&lt;br&gt;- 是否启用：Bool&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;- 创建识别规则&lt;br&gt;- 编辑识别规则&lt;br&gt;- 启用/禁用识别规则&lt;br&gt;- 删除识别规则&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;overflow=fill;" parent="1" vertex="1">
+          <mxGeometry x="800" y="590" width="160" height="290" as="geometry" />
+        </mxCell>
+        <mxCell id="u11UjmIOdCRiVaNOssiP-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=-0.02;entryY=0.571;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="u11UjmIOdCRiVaNOssiP-1" target="cfgEqrc7yUKkda0pwVI9-26" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="u11UjmIOdCRiVaNOssiP-3" value="n:1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="u11UjmIOdCRiVaNOssiP-2" vertex="1" connectable="0">
+          <mxGeometry x="-0.3042" y="2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="u11UjmIOdCRiVaNOssiP-4" value="&lt;table border=&quot;1&quot; width=&quot;100%&quot; height=&quot;100%&quot; cellpadding=&quot;4&quot; style=&quot;width:100%;height:100%;border-collapse:collapse;&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;th align=&quot;center&quot;&gt;资源对象&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;- id：String&lt;br&gt;- 类型：String&lt;br&gt;- 名称：String&lt;br&gt;- 关联原始告警：Relation&lt;br&gt;- 关联维护计划：Relation&lt;br&gt;- 负责人：Relation&lt;br&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;- 查看资源对象&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;overflow=fill;" parent="1" vertex="1">
+          <mxGeometry x="120" y="300" width="150" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="u11UjmIOdCRiVaNOssiP-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=-0.019;entryY=0.559;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="u11UjmIOdCRiVaNOssiP-4" target="cfgEqrc7yUKkda0pwVI9-25" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="300" y="390" />
+              <mxPoint x="300" y="662" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="u11UjmIOdCRiVaNOssiP-6" value="1:n" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="u11UjmIOdCRiVaNOssiP-5" vertex="1" connectable="0">
+          <mxGeometry x="0.0705" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="u11UjmIOdCRiVaNOssiP-7" value="&lt;table border=&quot;1&quot; width=&quot;100%&quot; height=&quot;100%&quot; cellpadding=&quot;4&quot; style=&quot;width:100%;height:100%;border-collapse:collapse;&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;th align=&quot;center&quot;&gt;告警收敛规则&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;- id：String&lt;br&gt;- 名称：String&lt;br&gt;- 描述信息：String&lt;br&gt;- 关联模型：String&lt;br&gt;- 过滤条件：String&lt;br&gt;- 收敛规则：Struct(可关联维护计划)&lt;br&gt;- 优先级：String&lt;br&gt;- 有效告警：Relation&lt;br&gt;- 原始告警：Relation&lt;br&gt;- 是否启用：Bool&lt;br&gt;- 关联部门：Relation&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;- 创建收敛规则&lt;br&gt;- 编辑收敛规则&lt;br&gt;- 启用/禁用收敛规则&lt;br&gt;- 删除收敛规则&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;overflow=fill;" parent="1" vertex="1">
+          <mxGeometry x="1200" y="570" width="160" height="320" as="geometry" />
+        </mxCell>
+        <mxCell id="u11UjmIOdCRiVaNOssiP-8" value="&lt;table border=&quot;1&quot; width=&quot;100%&quot; height=&quot;100%&quot; cellpadding=&quot;4&quot; style=&quot;width:100%;height:100%;border-collapse:collapse;&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;th align=&quot;center&quot;&gt;维护计划&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;- id：String&lt;br&gt;- 名称：String&lt;br&gt;- 资源对象：Relation&lt;br&gt;- 维护类型：周期性|一次性&lt;br&gt;- 维护期：dateTime&lt;br&gt;- 维护说明：txt&lt;br&gt;- 是否弹窗：Bool&lt;br&gt;- 状态：String&lt;font style=&quot;font-size: 8px;&quot;&gt;生效中|已过期|待生效&amp;nbsp; &amp;nbsp;&lt;/font&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;- 创建维护计划&lt;br&gt;- 删除维护计划&lt;br&gt;- 查看维护计划&lt;br&gt;- 修改维护计划&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;overflow=fill;" parent="1" vertex="1">
+          <mxGeometry x="1420" y="610" width="170" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="u11UjmIOdCRiVaNOssiP-11" value="&lt;table border=&quot;1&quot; width=&quot;100%&quot; height=&quot;100%&quot; cellpadding=&quot;4&quot; style=&quot;width:100%;height:100%;border-collapse:collapse;&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;th align=&quot;center&quot;&gt;资源对象&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;- id：String&lt;br&gt;- 类型：String&lt;br&gt;- 名称：String&lt;br&gt;- 关联原始告警：Relation&lt;br&gt;- 关联维护计划：Relation&lt;br&gt;- 负责人：Relation&lt;br&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;- 查看资源对象&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;overflow=fill;" parent="1" vertex="1">
+          <mxGeometry x="1424.5" y="850" width="151" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="u11UjmIOdCRiVaNOssiP-14" value="" style="edgeStyle=elbowEdgeStyle;elbow=horizontal;endArrow=classic;html=1;curved=0;rounded=0;endSize=8;startSize=8;entryX=-0.017;entryY=0.243;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" target="u11UjmIOdCRiVaNOssiP-8" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1360" y="710" as="sourcePoint" />
+            <mxPoint x="1410" y="660" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="u11UjmIOdCRiVaNOssiP-15" value="n:1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="u11UjmIOdCRiVaNOssiP-14" vertex="1" connectable="0">
+          <mxGeometry x="-0.6396" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QuVUxzMfI6Nxj_qWlXYm-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.551;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="u11UjmIOdCRiVaNOssiP-8" target="u11UjmIOdCRiVaNOssiP-11" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1610" y="690" />
+              <mxPoint x="1610" y="949" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QuVUxzMfI6Nxj_qWlXYm-2" value="1:n" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="QuVUxzMfI6Nxj_qWlXYm-1" vertex="1" connectable="0">
+          <mxGeometry x="-0.1801" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QuVUxzMfI6Nxj_qWlXYm-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.003;entryY=0.682;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="cfgEqrc7yUKkda0pwVI9-26" target="u11UjmIOdCRiVaNOssiP-7" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="QuVUxzMfI6Nxj_qWlXYm-4" value="1:n" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="QuVUxzMfI6Nxj_qWlXYm-3" vertex="1" connectable="0">
+          <mxGeometry x="0.1095" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QuVUxzMfI6Nxj_qWlXYm-6" value="&lt;table border=&quot;1&quot; width=&quot;100%&quot; height=&quot;100%&quot; cellpadding=&quot;4&quot; style=&quot;width:100%;height:100%;border-collapse:collapse;&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;th align=&quot;center&quot;&gt;告警自愈规则&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;- id：String&lt;br&gt;- 名称：String&lt;br&gt;- 描述信息：String&lt;br&gt;- 关联部门：Relation&lt;br&gt;- 过滤条件：Struct&lt;br&gt;- 自愈动作：Struct(流程)&lt;br&gt;- 最近状态：String(成功/失败)&lt;br&gt;- 是否启用：Bool&lt;br&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;- 新增自愈规则&lt;br&gt;- 删除自愈规则&lt;br&gt;- 查看自愈规则&lt;br&gt;- 修改自愈规则&lt;br&gt;- 启用/禁用自愈规则&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;overflow=fill;" parent="1" vertex="1">
+          <mxGeometry x="1000" y="740" width="169" height="280" as="geometry" />
+        </mxCell>
+        <mxCell id="QuVUxzMfI6Nxj_qWlXYm-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.556;entryY=0.995;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="QuVUxzMfI6Nxj_qWlXYm-6" target="cfgEqrc7yUKkda0pwVI9-26" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="QuVUxzMfI6Nxj_qWlXYm-8" value="1:n" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="QuVUxzMfI6Nxj_qWlXYm-7" vertex="1" connectable="0">
+          <mxGeometry x="-0.1645" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mfQG7iK4CB9ToEW0L1Qx-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="mfQG7iK4CB9ToEW0L1Qx-2" target="cfgEqrc7yUKkda0pwVI9-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mfQG7iK4CB9ToEW0L1Qx-4" value="1:n" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="mfQG7iK4CB9ToEW0L1Qx-3">
+          <mxGeometry x="-0.1026" y="-2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mfQG7iK4CB9ToEW0L1Qx-2" value="&lt;table border=&quot;1&quot; width=&quot;100%&quot; height=&quot;100%&quot; cellpadding=&quot;4&quot; style=&quot;width:100%;height:100%;border-collapse:collapse;&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;th align=&quot;center&quot;&gt;监控服务&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;- id：String&lt;br&gt;- 名称：String&lt;br&gt;- IP: IP&lt;br&gt;- 运行状态：String&lt;br&gt;- 维护状态：String&lt;br&gt;- 版本：String&lt;br&gt;- 关联的告警源：Relation&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;- 安装监控服务&lt;br&gt;- 卸载监控服务&lt;br&gt;- 升级监控服务&lt;br&gt;- 启/停监控服务&lt;br&gt;- 同步&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;overflow=fill;" vertex="1" parent="1">
+          <mxGeometry x="580" y="770" width="160" height="290" as="geometry" />
+        </mxCell>
+        <mxCell id="mfQG7iK4CB9ToEW0L1Qx-5" value="&lt;table border=&quot;1&quot; width=&quot;100%&quot; height=&quot;100%&quot; cellpadding=&quot;4&quot; style=&quot;width:100%;height:100%;border-collapse:collapse;&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;th align=&quot;center&quot;&gt;告警丰富规则&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;- id：String&lt;br&gt;- 名称：String&lt;br&gt;- 描述信息：String&lt;br&gt;- 关联模型：String&lt;br&gt;- 过滤条件：String&lt;br&gt;- 丰富规则：Struct(&lt;br&gt;- 优先级：String&lt;br&gt;- 丰富前告警：Relation&lt;br&gt;- 丰富后告警：Relation&lt;br&gt;- 是否启用：Bool&lt;br&gt;- 关联部门：Relation&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;- 创建收敛规则&lt;br&gt;- 编辑收敛规则&lt;br&gt;- 启用/禁用收敛规则&lt;br&gt;- 删除收敛规则&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;overflow=fill;" vertex="1" parent="1">
+          <mxGeometry x="1210" y="240" width="160" height="320" as="geometry" />
+        </mxCell>
+        <mxCell id="mfQG7iK4CB9ToEW0L1Qx-7" value="" style="edgeStyle=elbowEdgeStyle;elbow=horizontal;endArrow=classic;html=1;curved=0;rounded=0;endSize=8;startSize=8;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1160" y="550" as="sourcePoint" />
+            <mxPoint x="1210" y="500" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mfQG7iK4CB9ToEW0L1Qx-8" value="1:n" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="mfQG7iK4CB9ToEW0L1Qx-7">
+          <mxGeometry x="-0.6714" y="4" relative="1" as="geometry">
+            <mxPoint x="-1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mfQG7iK4CB9ToEW0L1Qx-10" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="mfQG7iK4CB9ToEW0L1Qx-9" target="cfgEqrc7yUKkda0pwVI9-26">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mfQG7iK4CB9ToEW0L1Qx-11" value="n:1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="mfQG7iK4CB9ToEW0L1Qx-10">
+          <mxGeometry x="0.22" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mfQG7iK4CB9ToEW0L1Qx-9" value="&lt;table border=&quot;1&quot; width=&quot;100%&quot; height=&quot;100%&quot; cellpadding=&quot;4&quot; style=&quot;width:100%;height:100%;border-collapse:collapse;&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;th align=&quot;center&quot;&gt;告警分派规则&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;- id：String&lt;br&gt;- 名称：String&lt;br&gt;- 描述信息：String&lt;br&gt;- 过滤条件：String&lt;br&gt;- 分派规则：Struct&lt;br&gt;- 是否启用：Bool&lt;br&gt;- 通知组：Relation&lt;br&gt;- 关联部门：Relation&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;- 创建分派规则&lt;br&gt;- 编辑分派规则&lt;br&gt;- 启用/禁用分派规则&lt;br&gt;- 删除分派规则&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;overflow=fill;" vertex="1" parent="1">
+          <mxGeometry x="1000" y="150" width="160" height="290" as="geometry" />
+        </mxCell>
+        <mxCell id="mfQG7iK4CB9ToEW0L1Qx-12" value="&lt;table border=&quot;1&quot; width=&quot;100%&quot; height=&quot;100%&quot; cellpadding=&quot;4&quot; style=&quot;width:100%;height:100%;border-collapse:collapse;&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;th align=&quot;center&quot;&gt;告警通知规则&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;- id：String&lt;br&gt;- 名称：String&lt;br&gt;- 描述信息：String&lt;br&gt;- 通知方式：String&lt;br&gt;- 通知频率：int&lt;br&gt;- 通知收敛：struct&lt;br&gt;- 接收者：struct(用户|用户组|二线值守)&lt;br&gt;- 是否启用：Bool&lt;br&gt;- 关联部门：Relation&lt;br&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;- 新增通知规则&lt;br&gt;- 删除通知规则&lt;br&gt;- 修改通知规则&lt;br&gt;- 查看通知规则&lt;br&gt;- 启用/禁用通知规则&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;overflow=fill;" vertex="1" parent="1">
+          <mxGeometry x="1210" y="-50" width="160" height="280" as="geometry" />
+        </mxCell>
+        <mxCell id="mfQG7iK4CB9ToEW0L1Qx-13" value="" style="edgeStyle=elbowEdgeStyle;elbow=horizontal;endArrow=classic;html=1;curved=0;rounded=0;endSize=8;startSize=8;exitX=1.012;exitY=0.093;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="cfgEqrc7yUKkda0pwVI9-26">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1164.5" y="160" as="sourcePoint" />
+            <mxPoint x="1214.5" y="110" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mfQG7iK4CB9ToEW0L1Qx-14" value="1:n" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="mfQG7iK4CB9ToEW0L1Qx-13">
+          <mxGeometry x="-0.6714" y="4" relative="1" as="geometry">
+            <mxPoint x="-1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mfQG7iK4CB9ToEW0L1Qx-17" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="mfQG7iK4CB9ToEW0L1Qx-15" target="mfQG7iK4CB9ToEW0L1Qx-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mfQG7iK4CB9ToEW0L1Qx-18" value="1:n" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="mfQG7iK4CB9ToEW0L1Qx-17">
+          <mxGeometry x="-0.2036" y="3" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mfQG7iK4CB9ToEW0L1Qx-15" value="&lt;table border=&quot;1&quot; width=&quot;100%&quot; height=&quot;100%&quot; cellpadding=&quot;4&quot; style=&quot;width:100%;height:100%;border-collapse:collapse;&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;th align=&quot;center&quot;&gt;值班日历&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;- id：String&lt;br&gt;- 名称：String&lt;br&gt;- 值班人员：Relation&lt;br&gt;- 值班时段：Struct(早|晚|夜)&lt;br&gt;- 关联值班组：Relation&lt;br&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;- 新增值班计划&lt;br&gt;- 修改值班计划&lt;br&gt;- 删除指标计划&lt;br&gt;- 查看值班计划&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;overflow=fill;" vertex="1" parent="1">
+          <mxGeometry x="1424.5" y="-50" width="160" height="210" as="geometry" />
+        </mxCell>
+        <mxCell id="mfQG7iK4CB9ToEW0L1Qx-20" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="mfQG7iK4CB9ToEW0L1Qx-16" target="mfQG7iK4CB9ToEW0L1Qx-19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mfQG7iK4CB9ToEW0L1Qx-21" value="n:1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="mfQG7iK4CB9ToEW0L1Qx-20">
+          <mxGeometry x="-0.2543" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mfQG7iK4CB9ToEW0L1Qx-16" value="&lt;table border=&quot;1&quot; width=&quot;100%&quot; height=&quot;100%&quot; cellpadding=&quot;4&quot; style=&quot;width:100%;height:100%;border-collapse:collapse;&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;th align=&quot;center&quot;&gt;用户&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;- id：String&lt;br&gt;- 姓名：String&lt;br&gt;- 岗职：String&lt;br&gt;- 用户名：String&lt;br&gt;- 所属小组：Relation&lt;br&gt;- 所属部门：Relation&lt;br&gt;&lt;br&gt;- 联系方式：String&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;- 查看用户&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;overflow=fill;" vertex="1" parent="1">
+          <mxGeometry x="1650" y="-50" width="160" height="210" as="geometry" />
+        </mxCell>
+        <mxCell id="mfQG7iK4CB9ToEW0L1Qx-19" value="&lt;table border=&quot;1&quot; width=&quot;100%&quot; height=&quot;100%&quot; cellpadding=&quot;4&quot; style=&quot;width:100%;height:100%;border-collapse:collapse;&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;th align=&quot;center&quot;&gt;用户组&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;- id：String&lt;br&gt;- 名称：String&lt;br&gt;- 关联用户：Relation&lt;br&gt;- 关联部门：Relation&lt;br&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;- 查看用户组&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;overflow=fill;" vertex="1" parent="1">
+          <mxGeometry x="1650" y="210" width="160" height="170" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
